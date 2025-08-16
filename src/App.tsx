@@ -22,7 +22,7 @@ import DashboardConcept3 from './components/DashboardConcept3';
 import DashboardConcept4 from './components/DashboardConcept4';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import AdminMpinLogin from './components/AdminMpinLogin';
-import AdminDashboardNew from './components/AdminDashboardNew';
+import AdminDashboard from './components/AdminDashboardNew';
 import CustomerServiceMpinLogin from './components/CustomerServiceMpinLogin';
 import EnhancedCustomerServiceDashboard from './components/EnhancedCustomerServiceDashboard';
 import AffiliateLinks from './components/AffiliateLinks';
