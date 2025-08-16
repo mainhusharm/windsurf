@@ -122,7 +122,6 @@ const AppContent = () => {
           }
         />
         <Route path="/admin" element={<AdminLogin />} />
-        <Route path="/admin" element={<AdminMpinLogin />} />
         <Route
           path="/admin/dashboard"
           element={
