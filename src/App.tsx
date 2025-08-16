@@ -22,7 +22,9 @@ import DashboardConcept3 from './components/DashboardConcept3';
 import DashboardConcept4 from './components/DashboardConcept4';
 import ThemeSwitcher from './components/ThemeSwitcher';
 import AdminMpinLogin from './components/AdminMpinLogin';
-import AdminDashboard from './components/AdminDashboard';
+import AdminDashboardNew from './components/AdminDashboardNew';
+import CustomerServiceMpinLogin from './components/CustomerServiceMpinLogin';
+import EnhancedCustomerServiceDashboard from './components/EnhancedCustomerServiceDashboard';
 import AffiliateLinks from './components/AffiliateLinks';
 import ProtectedRoute from './components/ProtectedRoute';
 import { UserProvider, useUser } from './contexts/UserContext';
@@ -121,11 +123,21 @@ const AppContent = () => {
             </ProtectedRoute>
           }
         />
+        <Route path="/admin" element={<AdminMpinLogin />} />
         <Route
           path="/admin/dashboard"
           element={
             <ProtectedRoute>
-              <AdminDashboard onLogout={handleLogout} />
+              <AdminDashboardNew onLogout={handleLogout} />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="/customer-service" element={<CustomerServiceMpinLogin />} />
+        <Route
+          path="/customer-service/dashboard"
+          element={
+            <ProtectedRoute>
+              <EnhancedCustomerServiceDashboard />
             </ProtectedRoute>
           }
         />
@@ -137,7 +149,6 @@ const AppContent = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/trade-mentor/:tradeId" element={<TradeMentor />} />
-        <Route path="/customer-service" element={<CustomerServiceDashboard />} />
       </Routes>
     </div>
   );
