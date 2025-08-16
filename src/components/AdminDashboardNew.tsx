@@ -22,7 +22,6 @@ import {
 } from 'lucide-react';
 import { useSignalDistribution } from './SignalDistributionService';
 import { notificationService } from '../services/notificationService';
-import ChartAnalysis from './ChartAnalysis';
 import SettingsModal from './SettingsModal';
 import { Settings } from 'lucide-react';
 import FuturisticBackground from './FuturisticBackground';

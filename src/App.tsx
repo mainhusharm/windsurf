@@ -128,7 +128,7 @@ const AppContent = () => {
           path="/admin/dashboard"
           element={
             <ProtectedRoute>
-              <AdminDashboardNew onLogout={handleLogout} />
+              <AdminDashboard onLogout={handleLogout} />
             </ProtectedRoute>
           }
         />
