@@ -21,7 +21,7 @@ import DashboardConcept2 from './components/DashboardConcept2';
 import DashboardConcept3 from './components/DashboardConcept3';
 import DashboardConcept4 from './components/DashboardConcept4';
 import ThemeSwitcher from './components/ThemeSwitcher';
-import AdminLogin from './components/AdminLogin';
+import AdminMpinLogin from './components/AdminMpinLogin';
 import AdminDashboard from './components/AdminDashboard';
 import AffiliateLinks from './components/AffiliateLinks';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -122,6 +122,7 @@ const AppContent = () => {
           }
         />
         <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/admin" element={<AdminMpinLogin />} />
         <Route
           path="/admin/dashboard"
           element={
