@@ -23,7 +23,6 @@ import {
 import { useSignalDistribution } from './SignalDistributionService';
 import { notificationService } from '../services/notificationService';
 import ChartAnalysis from './ChartAnalysis';
-import AutomatedSignals from './AutomatedSignals';
 import SettingsModal from './SettingsModal';
 import { Settings } from 'lucide-react';
 import FuturisticBackground from './FuturisticBackground';
@@ -885,7 +884,6 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
         {activeTab === 'automated-signals' && (
           <>
             <ChartAnalysis />
-            <AutomatedSignals />
           </>
         )}
         {activeTab === 'crypto-generator' && (
